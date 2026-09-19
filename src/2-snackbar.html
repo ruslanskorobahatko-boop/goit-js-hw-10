@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: min(420px, 90vw);
+        padding: 24px;
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-weight: 600;
+      }
+
+      input[type='number'] {
+        min-height: 40px;
+        padding: 8px 12px;
+        border: 1px solid #cfd3d9;
+        border-radius: 8px;
+        font-size: 1rem;
+      }
+
+      fieldset {
+        border: 1px solid #cfd3d9;
+        border-radius: 8px;
+        display: flex;
+        gap: 18px;
+        padding: 14px 16px;
+      }
+
+      legend {
+        font-weight: 600;
+      }
+
+      button {
+        min-height: 44px;
+        border: none;
+        border-radius: 10px;
+        background: #4d5ae5;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form">
+      <label>
+        Delay (ms)
+        <input type="number" name="delay" required />
+      </label>
+
+      <fieldset>
+        <legend>State</legend>
+        <label>
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label>
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button type="submit">Create notification</button>
+    </form>
+
+    <script type="module" src="./2-snackbar.js"></script>
+  </body>
+</html>
