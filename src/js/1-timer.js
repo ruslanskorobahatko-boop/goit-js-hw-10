@@ -32,7 +32,7 @@ function convertMs(ms) {
 }
 
 function renderTime({ days, hours, minutes, seconds }) {
-  daysValue.textContent = String(days);
+  daysValue.textContent = addLeadingZero(days);
   hoursValue.textContent = addLeadingZero(hours);
   minutesValue.textContent = addLeadingZero(minutes);
   secondsValue.textContent = addLeadingZero(seconds);
