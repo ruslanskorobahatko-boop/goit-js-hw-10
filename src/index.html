@@ -2,22 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>JavaScript Homework 10</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        color: #2f2f37;
+      }
+
+      main {
+        width: min(520px, 90vw);
+        padding: 32px;
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      }
+
+      h1 {
+        margin-top: 0;
+      }
+
+      ul {
+        display: grid;
+        gap: 12px;
+        padding: 0;
+        list-style: none;
+      }
+
+      a {
+        display: block;
+        padding: 14px 16px;
+        border-radius: 8px;
+        background: #4d5ae5;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        background: #3d49c8;
+      }
+    </style>
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+      <h1>JavaScript Homework 10</h1>
+      <ul>
+        <li><a href="./1-timer.html">Task 1: Countdown timer</a></li>
+        <li><a href="./2-snackbar.html">Task 2: Promise generator</a></li>
+      </ul>
     </main>
-
-    <load src="./partials/footer.html" />
-
-    <script type="module" src="./main.js"></script>
   </body>
 </html>
